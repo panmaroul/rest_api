@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<!-- Basic -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">	
+
+		<title>Assessed Component 2: Data Visualisation Application</title>	
+
+		<meta name="keywords" content="WebSite Template" />
+		<meta name="description" content="Class Project">
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+
+		<!-- Mobile Metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+
+		<!-- Web Fonts  -->
+		<link id="googleFonts" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7CShadows+Into+Light&display=swap" rel="stylesheet" type="text/css">
+
+		<!-- Vendor CSS -->
+		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.min.css">
+
+		<!-- Theme CSS -->
+		<link rel="stylesheet" href="css/theme.css">
+		<link rel="stylesheet" href="css/theme-elements.css">
+
+		<!-- Skin CSS -->
+		<link id="skinCSS" rel="stylesheet" href="css/skins/default.css">
+
+		<!-- Theme Custom CSS -->
+		<link rel="stylesheet" href="css/custom.css">
+
+		<!-- Head Libs -->
+		<script src="vendor/modernizr/modernizr.min.js"></script>
+
+	</head>
+	<body id="body" class="one-page alternative-font-5" data-plugin-scroll-spy data-plugin-options="{'target': '#header'}">
+		<div class="body">
+
+			<header id="header" class="header-transparent header-effect-shrink bg-dark" data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': true, 'stickyStartAt': 30, 'stickyHeaderContainerHeight': 70}">
+				<div class="header-body border-top-0 bg-dark box-shadow-none">
+					<div class="header-container container">
+						<div class="header-row">
+							<div class="header-column">
+								<div class="header-row">
+									<div class="header-logo">
+										<a href="index.html" class="header-logo-name">
+											Energy
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="header-column justify-content-end">
+								<div class="header-row">
+									<div class="header-nav header-nav-links header-nav-dropdowns-dark header-nav-light-text order-2 order-lg-1">
+										<div class="header-nav-main header-nav-main-font-lg header-nav-main-font-lg-upper-2 header-nav-main-mobile-dark header-nav-main-square header-nav-main-dropdown-no-borders header-nav-main-effect-2 header-nav-main-sub-effect-1">
+											<nav class="collapse">
+												<ul class="nav nav-pills" id="mainNav">
+													<li>
+														<a class="nav-link" data-hash data-hash-offset="0" data-hash-offset-lg="68" href="#world_share">World Share</a>
+													</li>
+													<li>
+														<a class="nav-link" data-hash data-hash-offset="0" data-hash-offset-lg="68" href="#country_share_of_world_co2">CO2 Share</a>
+													</li>
+													<li>
+														<a class="nav-link" data-hash data-hash-offset="0" data-hash-offset-lg="68" href="#co2_emiss_per_capita">Emissions per Person</a>
+													</li>
+													<li>
+														<a class="nav-link" data-hash data-hash-offset="0" data-hash-offset-lg="68" href="#co2_emiss_one_year_change">Emissions Increased</a>
+													</li>
+													<li>
+														<a class="nav-link" data-hash data-hash-offset="0" data-hash-offset-lg="68" href="#non_renewable">Fossil Fuels</a>
+													</li>
+												</ul>
+											</nav>
+										</div>
+										<button class="btn header-btn-collapse-nav" data-bs-toggle="collapse" data-bs-target=".header-nav-main nav">
+											<i class="fas fa-bars"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<div role="main" class="main">
+				<section id="services" class="section section-height-3 bg-dark border-0 m-0 ">
+					<div class="row"></div>
+				</section>
+
+				<div id="world_share" class="container pb-4">
+					<div class="container">
+						<div class="row justify-content-center align-items-center">
+							<div class="col-lg-8 col-md-10">
+								<canvas id="myChart" style="width:100%;" class="col-lg-8"></canvas>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<div id="country_share_of_world_co2" class="container pb-4">
+					<div class="row justify-content-center align-items-center">
+						<div class="col-lg-8 col-md-10">
+							<canvas id="myChart1" style="width:100%;" class="col-lg-8"></canvas>
+						</div>
+					</div>
+				</div>
+
+				<section id="co2_emiss_per_capita" class="section border-0 m-0 bg-white">
+					<div class="container">
+						<div class="row justify-content-center align-items-center">
+							<div class="col-lg-8 col-md-10">
+								<canvas id="myChart2" style="width:100%;" class="col-lg-8"></canvas>
+							</div>
+						</div>
+						
+					</div>
+				</section>
+
+				<div id="co2_emiss_one_year_change" class="container pb-4">
+					<div class="row justify-content-center align-items-center">
+						<div class="col-lg-8 col-md-10">
+							<canvas id="myChart3" style="width:100%;" class="col-lg-8"></canvas>
+						</div>
+					</div>
+				</div>
+
+				<div id="non_renewable" class="container pb-4">
+					<div class="row justify-content-center align-items-center">
+						<div class="col-lg-8 col-md-10">
+							<canvas id="myChart4" style="width:100%;" class="col-lg-8"></canvas>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<footer id="footer" class="mt-0">
+				<div class="footer-copyright">
+					<div class="container py-2">
+						<div class="row py-4">
+							<div class="col d-flex align-items-center justify-content-center">
+								<p><strong>University of Derby</strong> - Department of Electronics, Computing
+									and Mathematics</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+		</div>
+
+		<!-- Vendor -->
+		<script src="vendor/jquery/jquery.min.js"></script>
+		<script src="vendor/jquery.easing/jquery.easing.min.js"></script>
+		<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<script src="vendor/isotope/jquery.isotope.min.js"></script>
+
+		<!-- Theme Base, Components and Settings -->
+		<script src="js/theme.js"></script>
+
+		<!-- Theme Custom -->
+		<script src="js/custom.js"></script>
+
+		<!-- Theme Initialization Files -->
+		<script src="js/theme.init.js"></script>
+
+		<!-- ChartJS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+		<script>
+			call_charts();
+		</script>
+	</body>
+</html>
